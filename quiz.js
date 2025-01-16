@@ -1,5 +1,5 @@
-let submitAnswer = document.getElementById("submit-answer");
-let feedback = document.getElementById("feedback");
+let submitAnswer = document.querySelector("#submit-answer");
+let feedback = document.querySelector("#feedback");
 
 submitAnswer.addEventListener('click', () => {
     checkAnswer();
