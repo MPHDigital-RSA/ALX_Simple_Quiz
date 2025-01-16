@@ -11,7 +11,7 @@ let checkAnswer = () => {
     let correctAnswer = '4';
     let userAnswer = displayRadioValue();
 
-    if (correctAnswer === userAnswer){
+    if (userAnswer === correctAnswer){
         feedback.textContent = 'Correct! Well done';
     }else{
         feedback.textContent = "That's incorrect. Try again!";
