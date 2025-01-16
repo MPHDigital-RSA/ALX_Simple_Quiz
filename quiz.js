@@ -1,0 +1,31 @@
+let submitAnswer = document.getElementById("submit-answer");
+let feedback = document.getElementById("feedback");
+
+submitAnswer.addEventListener('click', () => {
+    checkAnswer();
+})
+
+
+
+let checkAnswer = () => {
+    let correctAnswer = '4';
+    let userAnswer = displayRadioValue();
+
+    if (correctAnswer === userAnswer){
+        feedback.textContent = 'Correct! Well done';
+    }else{
+        feedback.textContent = "That's incorrect. Try again!";
+    }
+    
+}
+
+
+let displayRadioValue = () =>  {
+    let radioButtonValue = document.getElementsByName('quiz');
+
+    for (let i = 0; i < radioButtonValue.length; i++) {
+        if (radioButtonValue[i].checked)
+        // return a string value of the checked radio button
+        return radioButtonValue[i].value;
+    }
+};
