@@ -1,4 +1,4 @@
-let submitAnswer = document.querySelector("#submit-answer");
+let submitAnswer = document.getElementById("submit-answer");
 let feedback = document.querySelector("#feedback");
 
 submitAnswer.addEventListener('click', () => {
